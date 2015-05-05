@@ -40,7 +40,7 @@ This package is to be used when writing in [CSS](http://www.w3schools.com/css/) 
 
 ![Atom-color-picker image](https://i.github-camo.com/81a0cddbcff3538b41b42deea855916630cc883e/687474703a2f2f662e636c2e6c792f6974656d732f336733543430316f306f3046326d324f317a314b2f6f75747075742e676966)
 
-###¢ Atom-html-preview
+#### Atom-html-preview
 This package open a new tab with a preview of your html+css+js code. Like shown in the image. It refreshes it automatically once open so makes it very easy to use.
 ![atom-html-preview](https://i.github-camo.com/0751416a59554f6fd3fac1a5b03808c263cf11ca/68747470733a2f2f646c2e64726f70626f7875736572636f6e74656e742e636f6d2f752f32303934373030382f776562626f782f61746f6d2f61746f6d2d68746d6c2d707265766965772e706e67)
 
@@ -48,7 +48,7 @@ This package open a new tab with a preview of your html+css+js code. Like shown 
 A great pakage that display the colors of the css color code in code.
 ![atom-color-highlight](https://camo.githubusercontent.com/c3aaeeee1875bec435e468f58357becbac26367a/68747470733a2f2f7261772e6769746875622e636f6d2f61626533332f61746f6d2d636f6c6f722d686967686c696768742f6d61737465722f61746f6d2d636f6c6f722d686967686c696768742d7661726961626c65732e676966)
 
-###¢ Emmet
+#### Emmet
 
 One of the greatest plugins for any text editor. Emmet (Formerly zen coding) It makes web development remarkably easy. With some simple keystroke you can create an entire website without the hustle of typing every markup tag.
 
@@ -60,11 +60,11 @@ Instead of typing the whole html like this
 
 In emmet you type **div#someID.someClass** and you get the same result!.
 
-###¢ date
+#### date
 Date is just a package that put a timestamp anywhere you want. I've installed it, beacuse sometimes I wanted to put the date and time in the posts.
 ![date package image](images/date-package.png)
 
-#¢ Conclusions
+## Conclusions
 
 Atom is a nifty editor and very customizable. It's still in dvelopment, but I don't care, I'm going to use it anywaym because I liked it very much.
 
