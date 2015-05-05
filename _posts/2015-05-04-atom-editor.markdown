@@ -30,7 +30,7 @@ under a [FOSS](http://en.wikipedia.org/wiki/Free_and_open-source_software) licen
 
 ## Atom as a web development IDE
 
-Atom comes with a package already by default called "Markdown Preview" (Referenced in the image) wich is very nice. ![markdown preview](images/markdown-preview.png)
+Atom comes with a package already by default called "Markdown Preview" (Referenced in the image) wich is very nice. ![markdown preview](/images/markdown-preview.png)
 This is very handy for writing posts in blogs effortlesslym but if you're very serious about web development then this is not enough, so I'm going to list all the packages I've installed in Atom to create, at this moment, my personal blog.
 
 ### Atom packages
