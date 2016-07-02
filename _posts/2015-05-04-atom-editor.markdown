@@ -4,7 +4,7 @@ title:  "Atom Editor for web development"
 date:   2015-05-04 19:11:17
 categories: editor web
 ---
-The reason I made this blog is beacause I want to practice my english writing,
+The reason I made this blog is because I want to practice my english writing,
 so forgive me if it's not the best. Another reason it's to design in html and
 css.
 It's always a good idea to have a subject to don't write mumbo jumbo and be
@@ -30,8 +30,8 @@ under a [FOSS](http://en.wikipedia.org/wiki/Free_and_open-source_software) licen
 
 ## Atom as a web development IDE
 
-Atom comes with a package already by default called "Markdown Preview" (Referenced in the image) wich is very nice. ![markdown preview](/images/markdown-preview.png)
-This is very handy for writing posts in blogs effortlesslym but if you're very serious about web development then this is not enough, so I'm going to list all the packages I've installed in Atom to create, at this moment, my personal blog.
+Atom comes with a package already by default called "Markdown Preview" (Referenced in the image) which is very nice. ![markdown preview](/images/markdown-preview.png)
+This is very handy for writing posts in blogs effortlessly, but if you're very serious about web development then this is not enough, so I'm going to list all the packages I've installed in Atom to create, at this moment, my personal blog.
 
 ### Atom packages
 
@@ -45,7 +45,7 @@ This package open a new tab with a preview of your html+css+js code. Like shown 
 ![atom-html-preview](https://i.github-camo.com/0751416a59554f6fd3fac1a5b03808c263cf11ca/68747470733a2f2f646c2e64726f70626f7875736572636f6e74656e742e636f6d2f752f32303934373030382f776562626f782f61746f6d2f61746f6d2d68746d6c2d707265766965772e706e67)
 
 ###¢ Atom-color-highlight
-A great pakage that display the colors of the css color code in code.
+A great package that display the colors of the css color code in code.
 ![atom-color-highlight](https://camo.githubusercontent.com/c3aaeeee1875bec435e468f58357becbac26367a/68747470733a2f2f7261772e6769746875622e636f6d2f61626533332f61746f6d2d636f6c6f722d686967686c696768742f6d61737465722f61746f6d2d636f6c6f722d686967686c696768742d7661726961626c65732e676966)
 
 #### Emmet
@@ -61,11 +61,11 @@ Instead of typing the whole html like this
 In emmet you type **div#someID.someClass** and you get the same result!.
 
 #### date
-Date is just a package that put a timestamp anywhere you want. I've installed it, beacuse sometimes I wanted to put the date and time in the posts.
+Date is just a package that put a timestamp anywhere you want. I've installed it, because sometimes I wanted to put the date and time in the posts.
 ![date package image](images/date-package.png)
 
 ## Conclusions
 
-Atom is a nifty editor and very customizable. It's still in dvelopment, but I don't care, I'm going to use it anywaym because I liked it very much.
+Atom is a nifty editor and very customizable. It's still in development, but I don't care, I'm going to use it anyway because I liked it very much.
 
-Godd bye and take care.
+Good bye and take care.
