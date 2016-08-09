@@ -1,4 +1,18 @@
 # Site settings
+<<<<<<< HEAD
+title: Bata Loop Pak
+subtitle: Calibrated, hand forged bits & pixels
+email: my_email@nobots.bot
+description: Personal place to post & debate subjects that I find interesting.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://batalooppak.github.io" # the base hostname & protocol for your site
+
+twitter_username: bottybot
+github_username:  batalooppak
+
+paginate: 10
+highlighter: rouge
+=======
 title: Bata Loop Pak's Home Page - circa 90's
 email: your-email@domain.com
 description: Personal place to post & debate subjects I, me, myself and Irene find interesting.
@@ -6,6 +20,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://batalooppak.github.io" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
+>>>>>>> a24cd27014bc4f6cc067f8bedd6b4e36a4695648
 
 # Build settings
 markdown: kramdown

@@ -1,0 +1,26 @@
+---
+layout: page
+title: Blog
+alttitle: Bits & pieces
+permalink: /blog/
+---
+
+{% for post in site.posts %}
+<article class="post">
+	<header>
+		<h1>
+			<a href="{{ post.url | prepend: site.baseurl }}">
+				<time class="post-date" datetime="{{ post.date | date_to_xmlschema }}" pubdate="pubdate">
+					{{ post.date | date: "%m.%d.%Y" }}
+				</time>
+				{{ post.title }}
+			</a>
+		</h1>
+	</header>
+
+	{{ post.content | strip_html | truncatewords:75}}<br>
+	<a href="{{ post.url }}">Read more...</a><br><br>
+</article>
+{% endfor %}
+
+<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>

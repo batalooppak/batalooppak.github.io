@@ -1,6 +1,28 @@
 ---
 layout: default
 ---
+<<<<<<< HEAD
+<div class="pure-g">
+	<div class="pure-u-1 l-box">
+		<article class="post">
+			<header>
+				<h1>
+					<span>
+						<time class="post-date" datetime="{{ page.date | date_to_xmlschema }}" pubdate="pubdate">
+							{{ page.date | date: "%m.%d.%Y" }}
+						</time>
+						{{ page.title }}
+					</span>
+				</h1>
+			</header>
+
+			{{ content }}
+			<footer class="post-footer">
+				{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
+			</footer>
+		</article>
+	</div>
+=======
 <div class="post">
 
   <header class="post-header">
@@ -12,4 +34,5 @@ layout: default
     {{ content }}
   </article>
 
+>>>>>>> a24cd27014bc4f6cc067f8bedd6b4e36a4695648
 </div>

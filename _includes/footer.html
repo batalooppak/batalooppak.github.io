@@ -1,4 +1,85 @@
 <footer class="site-footer">
+<<<<<<< HEAD
+	<div class="footer-links">
+		<div class="pure-g">
+
+			<div class="pure-u-1 pure-u-md-1-4 pure-u-lg-6-24 pure-u-sm-1-2 l-box">
+				<section>
+					<h2>Categories</h2>
+					<ul>
+						{% for category in site.categories %}
+						<li><a href="/tags/{{category | first}}/">{{category | first }}</a></li>
+						{% endfor %} 
+					</ul>
+				</section>
+			</div>
+
+			<div class="pure-u-1 pure-u-md-4-24 pure-u-lg-5-24 pure-u-sm-1-2 l-box">
+				<section>
+					<h2>Tools</h2>
+					<ul>
+						<li><a target="_blank" href="https://github.com/neovim/neovim">NeoVim</a></li>
+						<li><a target="_blank" href="http://vim.org">Vim</a></li>
+						<li><a target="_blank" href="https://jekyllrb.com">Jekyll</a></li>
+						<li><a target="_blank" href="https://github.com">GitHub</a></li>
+						<li><a target="_blank" href="https://www.iterm2.com">iTerm2</a></li>
+					</ul>
+				</section>
+			</div>
+
+			<div class="pure-u-1 pure-u-md-1-4 pure-u-lg-5-24 pure-u-sm-1-2 l-box">
+				<section>
+					<h2>Favorites</h2>
+					<ul>
+						<li><a target="_blank" href="http://vimawesome.com">Vim awesome</a></li>
+						<li><a target="_blank" href="https://www.python.org">Python</a></li>
+						<li><a target="_blank" href="http://http://www.w3schools.com">w3school</a></li>
+						<li><a target="_blank" href="http://www.pythonbytesize.com">Python byte size</a></li>
+						<li><a target="_blank" href="http://interactivepython.org">Interactive python</a></li>
+						<li><a target="_blank" href="http://www.blur.com">Blur</a></li>
+						<li><a target="_blank" href="https://css-tricks.com">css-tricks</a></li>
+						<li><a target="_blank" href="http://codepen.io">Codepen</a></li>
+					</ul>
+				</section>
+			</div>
+
+			<div class="pure-u-1 pure-u-md-8-24 pure-u-lg-8-24 pure-u-sm-1-2 l-box">
+				<section>
+					<h2>Compliance</h2>
+					<p>This site tries to be in compliance with the latest web standards,
+						semantically and syntactically speaking, such as HTML5 and CSS3.</p>
+					<a target="_blank" href="http://www.w3.org/html/logo/">
+						<img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="165" height="64" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
+					</a>
+				</section>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="footer-info" role="contentinfo">
+		<div class="pure-g">
+			<div class="pure-u-1 pure-u-md-3-4 l-box">
+				<a class="footer-logo" href="/"></a>
+				<div class="footer-menu">
+					<ul>
+						{% for page in site.pages %}
+						{% if page.title %}
+						<li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+						{% endif %}
+						{% endfor %}
+						<li><a href="#">Sitemap</a></li>
+					</ul>
+				</div>
+				<p class="copyright">&copy; {{ site.time | date: '%Y' }} <a href="https://batalooppak.github.io">Bata loop pak</a>. All rights reserved.</p>
+			</div>
+			<div class="pure-u-1 pure-u-md-1-4 l-box">
+				<p class="subscription">Subscribe: <img src=/imgs/feed-icon-14x14.png></p>
+				<img class="cc-license" alt="Creative Commons License" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" />
+			</div>
+		</div>
+	</div>
+=======
 
   <div class="wrapper">
 
@@ -51,5 +132,6 @@
     </div>
 
   </div>
+>>>>>>> a24cd27014bc4f6cc067f8bedd6b4e36a4695648
 
 </footer>
