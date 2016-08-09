@@ -6,14 +6,10 @@ date: "2016-06-26 19:07:08 -0400"
 
 ## Keyboard shortcut to lock the system with password.
 
-<<<<<<< HEAD
 There is a keyboard shortcut to lock the computer in a breeze. But first you
 have to make sure you have the option *require password* selected in the OS X
 preferences. If you don´t have this activated then your display will only go to
 sleep and will not lock the screen with a password.
-=======
-There is a keyboard shortcut to lock the computer in a breeze. But first you have to make sure you have the option *require password* selected in the OS X preferences. If you don´t have this activated then your display will only go to sleep and will not lock the screen with a password.
->>>>>>> a24cd27014bc4f6cc067f8bedd6b4e36a4695648
 
 *1. First, in the OS X preferences, go to:*
 

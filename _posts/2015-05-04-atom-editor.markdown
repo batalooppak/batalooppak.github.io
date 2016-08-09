@@ -2,11 +2,7 @@
 layout: post
 title:  "Atom Editor for web development"
 date:   2015-05-04 19:11:17
-<<<<<<< HEAD
 categories: editor
-=======
-categories: editor web
->>>>>>> a24cd27014bc4f6cc067f8bedd6b4e36a4695648
 ---
 The reason I made this blog is because I want to practice my english writing,
 so forgive me if it's not the best. Another reason it's to design in html and
