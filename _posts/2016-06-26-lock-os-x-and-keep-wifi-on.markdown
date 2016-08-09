@@ -2,7 +2,7 @@
 layout: post
 title: "Lock OS X with password and keep WIFI on"
 date: "2016-06-26 19:07:08 -0400"
-categories: osx, wifi
+categories: [OS X]
 ---
 
 ## Keyboard shortcut to lock the system with password.

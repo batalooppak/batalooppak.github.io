@@ -2,7 +2,7 @@
 layout: post
 title:  "Primer post (Sí, claro)"
 date:   2016-07-31 09:05:00
-categories: compiling osx
+categories: [OS X]
 ---
 ## Displaying **italics** in weechat (OSX)
 

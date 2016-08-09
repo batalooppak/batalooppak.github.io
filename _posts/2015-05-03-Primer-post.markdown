@@ -2,7 +2,7 @@
 layout: post
 title:  "Primer post (Sí, claro)"
 date:   2015-05-03 23:09:53
-categories: jekyll update
+categories: update
 ---
 # Primer Post
 Como primer post escribiré las cosas que tengo que hacer con este blog.
