@@ -2,7 +2,7 @@
 layout: post
 title:  "Displaying italics in brewed weechat"
 date:   2016-07-31 09:05:00
-categories: IRC
+categories: IRC, osx
 ---
 ## Displaying **italics** in weechat (OSX)
 
