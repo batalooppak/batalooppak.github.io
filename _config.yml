@@ -9,7 +9,6 @@ url: "http://batalooppak.github.io" # the base hostname & protocol for your site
 twitter_username: bottybot
 github_username:  batalooppak
 
-paginate: 10
 highlighter: rouge
 
 # Build settings
