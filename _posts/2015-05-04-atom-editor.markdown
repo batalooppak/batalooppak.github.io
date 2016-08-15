@@ -1,8 +1,11 @@
 ---
 layout: post
-title:  "Atom Editor for web development"
-date:   2015-05-04 19:11:17
-categories: editor
+title: "Atom Editor for web development"
+date: 2015-05-04 19:11:17
+banner: "/images/banners/atom-editor-banner.png"
+thumb: "/images/thumbs/atom-editor-thumb.png"
+categories:
+  - editor
 ---
 The reason I made this blog is because I want to practice my english writing,
 so forgive me if it's not the best. Another reason it's to design in html and

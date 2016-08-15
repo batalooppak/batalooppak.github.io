@@ -3,35 +3,41 @@ layout: default
 ---
 
 <div class="pure-g">
-	<section class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-8 l-box">
-		<h2>Featured</h2>
-		<p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y
-			archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las
-			industrias desde el año 1500, cuando un impresor (N. del T. persona que se
-			dedica a la imprenta) desconocido usó una galería de textos y los mezcló
-			de tal manera que logró hacer un libro de textos especimen. No sólo
-			sobrevivió 500 años, sino que tambien ingresó como texto de relleno en
-			documentos electrónicos, quedando esencialmente igual al original. Fue
-			popularizado en los 60s con la creación de las hojas "Letraset", las
-			cuales contenian pasajes de Lorem Ipsum, y más recientemente con software
-			de autoedición, como por ejemplo Aldus PageMaker, el cual incluye
-			versiones de Lorem Ipsum.</p>
-	</section>
+	<div class="pure-u-1 pure-u-md-3-5 pure-u-lg-7-12">
+		<section class="section-featured">
+			<h2>Featured</h2>
+			<p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y
+				archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las
+				industrias desde el año 1500, cuando un impresor (N. del T. persona que se
+				dedica a la imprenta) desconocido usó una galería de textos y los mezcló
+				de tal manera que logró hacer un libro de textos especimen. No sólo
+				sobrevivió 500 años, sino que tambien ingresó como texto de relleno en
+				documentos electrónicos, quedando esencialmente igual al original. Fue
+				popularizado en los 60s con la creación de las hojas "Letraset", las
+				cuales contenian pasajes de Lorem Ipsum, y más recientemente con software
+				de autoedición, como por ejemplo Aldus PageMaker, el cual incluye
+				versiones de Lorem Ipsum.</p>
+		</section>
+	</div>
 
-	<section class="pure-u-1 pure-u-sm-1-2 pure-u-md-1-4 pure-u-lg-2-8 l-box">
-		<h2>Last</h2>
-		<ul class="post-list">
-			{% for post in site.posts offset:1 limit:3 %}
-			<li>
-				<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+	<div class="pure-u-1 pure-u-sm-1-2 pure-u-md-2-5 pure-u-lg-5-12">
+		<section class="section-latest">
+			<h2>Latest</h2>
+			<ul class="post-list">
+				{% for post in site.posts offset:1 limit:3 %}
+				<li>
+					<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-				<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-			</li>
-			{% endfor %}
-		</ul>
-	</section>
+					<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+				</li>
+				{% endfor %}
+			</ul>
+		</section>
+	</div>
 
-	<section class="pure-u-1 pure-u-sm-1-2 pure-u-md-1-4 pure-u-lg-3-8 l-box">
-		<h2>Photos</h2>
-	</section>
+	<div class="pure-u-1 pure-u-sm-1-2 pure-u-lg-1">
+		<section class="section-photos">
+			<h2>Photos</h2>
+		</section>
+	</div>
 </div>
