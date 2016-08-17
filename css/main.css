@@ -138,6 +138,13 @@ hr {
 	margin-bottom: 1.5em
 }
 
+.site-logo {
+	background: url("/images/logo.svg") no-repeat top center;
+	background-size: 20em;
+	width: 20em;
+	text-indent: -9999px
+}
+
 .site-nav {
 	text-transform: uppercase;
 	font-weight: bold
@@ -177,6 +184,8 @@ hr {
 	margin-right: .5em;
 	display: inline-block
 }
+
+.footer-logo { height: 1.3em; margin-right: -.4em }
 
 .copyright {
 	color: inherit;
