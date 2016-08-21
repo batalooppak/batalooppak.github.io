@@ -12,6 +12,12 @@
   display: flex
   flex-direction: column
 
+.visible
+  visibility: visible
+
+.not-visible
+  visibility: hidden
+
 
 // Header
 .site-header
@@ -25,13 +31,12 @@
   right: 1em
   z-index: 999
 
-.site-nav
+#site-nav
   margin-bottom: 1.5em
-  position: absolute
+  position: fixed
   z-index: 99
   width: 100vw
-  height: 100vh
-  visibility: hidden
+  height: 100%
   display: flex
   flex-flow: column
 
@@ -90,6 +95,9 @@
     flex-flow: row wrap
     justify-content: space-between
 
+  .not-visible
+    visibility: visible
+
   // Header
   .site-header
     max-width: 1000px
@@ -104,13 +112,12 @@
   .site-logo
     flex: 1
 
-  .site-nav
+  #site-nav
     margin-bottom: 1.5em
     position: static
     z-index: 0
     width: auto
     height: auto
-    visibility: visible
     display: flex
     flex: 1
     flex-direction: row

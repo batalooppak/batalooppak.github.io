@@ -18,11 +18,13 @@
 	<script>
 		function toggle(obj) {
 			var el = document.getElementById(obj);
-			if ( el.style.visibility != 'hidden' ) {
-				el.style.visibility = 'hidden';
+			if ( el.classList.contains("visible") ) {
+				el.classList.add("not-visible");
+				el.classList.remove("visible");
 			}
 			else {
-				el.style.visibility = 'visible';
+				el.classList.add("visible");
+				el.classList.remove("not-visible");
 			}
 		}
 	</script>
