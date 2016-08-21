@@ -1,24 +1,19 @@
 <header class="site-header" role="banner">
-	<div class="pure-g">
 
-		<div class="pure-u-1">
-			<div class="site-logo">
-				<h1><a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
-				<p class="site-subtitle">{{ site.subtitle }}</p>
-			</div>
-
-			<nav class="site-nav" role="navigation">
-				<a href="#" class="menu-icon"></a>
-				<ul>
-					{% for page in site.pages %}
-					{% if page.title %}
-					<li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-					{% endif %}
-					{% endfor %}
-				</ul>
-			</nav>
-
-		</div>
-
+	<div class="site-logo">
+		<h1 class="site-title"><a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+		<p class="site-subtitle">{{ site.subtitle }}</p>
 	</div>
+
+	<a href="#site-nav" id="toggle" onclick="toggle('site-nav')">&equiv;</a>
+	<nav id="site-nav" class="site-nav" role="navigation">
+		<a href="#" class="menu-icon"></a>
+		{% for page in site.pages %}
+		{% if page.title %}
+		<a class="site-nav__links" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}
+		</a>
+		{% endif %}
+		{% endfor %}
+	</nav>
+
 </header>

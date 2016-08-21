@@ -1,15 +1,20 @@
 # Site settings
 title: Bata Loop Pak
 subtitle: Calibrated, hand forged bits & pixels
-email: my_email@nobots.bot
 description: Personal place to post & debate subjects that I find interesting.
+
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://batalooppak.github.io" # the base hostname & protocol for your site
 
+email: my_email@nobots.bot
 twitter_username: bottybot
 github_username:  batalooppak
 
 highlighter: rouge
 
-# Build settings
+  # Build settings
 markdown: kramdown
+
+sass:
+  sass_dir: _sass
+  style: compressed

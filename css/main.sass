@@ -1,0 +1,215 @@
+---
+---
+
+@import "colors"
+@import "base"
+@import "syntax"
+
+.wrapper, .page-content
+  max-width: 1000px
+  padding: 1.5em
+  margin: 0 auto
+  display: flex
+  flex-direction: column
+
+
+// Header
+.site-header
+  display: flex
+  flex-flow: column wrap
+
+#toggle
+  font-size: 3em
+  position: fixed
+  top: 1em
+  right: 1em
+  z-index: 999
+
+.site-nav
+  color: $base-color
+  background: #fc0
+  margin-bottom: 1.5em
+  position: absolute
+  z-index: 99
+  width: 100vw
+  height: 100vh
+  visibility: hidden
+  display: flex
+  flex-flow: column
+
+.site-nav__links
+  color: $base-color
+  font-size: 4vw
+  line-height: 10vw
+  font-weight: 600
+  text-transform: uppercase
+  text-align: center
+  border: 1px solid $base-color
+  padding: .75em
+  margin-bottom: 0
+  border-bottom: 0
+  flex: 1
+
+
+// Footer
+.site-footer
+  background: $bg-footer
+
+// Footer links
+.footer-links
+  color: white
+
+.footer-links__menu
+  list-style: none
+
+// Footer info
+.footer-info
+  text-align: center
+  color: $fg-muted
+  background: $bg-muted
+
+.footer-menu__list
+  margin-right: .5em
+  display: inline-block
+
+.footer-menu__links
+  color: inherit
+  border-bottom: 0
+
+  &:hover
+    color: $fg-muted-high
+    border-bottom: inherit
+
+.footer-logo
+  width: 100%
+  display: block
+
+
+// Media queries
+@media screen and (min-width: 50em)
+  .wrapper, .page-content
+    flex-flow: row wrap
+    justify-content: space-between
+
+  // Header
+  .site-header
+    max-width: 1000px
+    padding: 1.5em
+    margin: 0 auto
+    display: flex
+    flex-flow: row wrap
+
+  #toggle
+    display: none
+
+  .site-logo
+    flex: 1
+
+  .site-nav
+    margin-bottom: 1.5em
+    position: static
+    z-index: 0
+    width: auto
+    height: auto
+    visibility: visible
+    display: flex
+    flex: 1
+    flex-direction: row
+    align-items: center
+
+  .site-nav__links
+    color: $base-color
+    font-size: 1em
+    line-height: 1.5em
+    font-weight: 600
+    text-transform: uppercase
+    text-align: center
+    padding: .75em
+    margin-bottom: 0
+    border: 0
+    border-right: 1px solid $base-color
+    flex: 1
+
+    &:hover
+      border: 0
+      background: tomato
+
+  // Content
+  .section
+    display: flex
+  .page-title, .content
+    flex: 1
+
+  // About
+  .flex
+    width: 100%
+    margin-bottom: 3em
+    display: flex
+    justify-content: space-between
+
+  .about-title
+    flex: 1
+
+  .about-content
+    flex: 1.5
+
+  .about-tools__menu
+    list-style: none
+
+  .about-tools__links
+    color: $base-color
+    background: #fc0
+    font-size: .875em
+    font-weight: 600
+    padding: 0 .5em
+    border-bottom: 2px solid $base-color
+    border-right: 2px solid $base-color
+
+    &:hover
+      color: $base-color
+      background: #fc0
+      font-size: .875em
+      font-weight: 600
+      padding: 0 .5em
+      border-bottom: 2px solid $base-color
+      border-right: 2px solid $base-color
+
+  // Footer
+  // Footer links
+
+  .footer-links__section
+    margin-right: 6em
+    flex: 1
+
+  .footer-tools
+    flex: 0 1
+
+  .footer-favorites
+    margin-right: 0
+    flex: 0 1
+
+  .footer-categories
+    flex: 0 1
+
+  .footer-compliance
+    text-align: center
+    flex: 2
+    order: -1
+
+  // Footer info
+  .footer-menu
+    text-align: left
+    flex: 0 0 80%
+
+  .footer-logo
+    width: auto
+    display: inline
+
+  .copy
+    font-size: .8125em
+    line-height: 1.2307692308em
+    text-align: left
+    flex: 0 0 80%
+
+  .cc-license
+    order: 1
