@@ -5,7 +5,7 @@
 @import "base"
 @import "syntax"
 
-.wrapper, .page-content
+.wrapper, .page-content, .site-header
   max-width: 1000px
   padding: 1.5em
   margin: 0 auto
@@ -20,10 +20,6 @@
 
 
 // Header
-.site-header
-  display: flex
-  flex-flow: column wrap
-
 #toggle
   font-size: 3em
   position: fixed
@@ -32,10 +28,11 @@
   z-index: 999
 
 #site-nav
-  margin-bottom: 1.5em
+  margin-top: -1.5em
+  margin-left: -1.5em
   position: fixed
   z-index: 99
-  width: 100vw
+  width: 100%
   height: 100%
   display: flex
   flex-flow: column
@@ -44,13 +41,11 @@
   color: $base-color
   background: #fc0
   font-size: 4vw
-  line-height: 10vw
   font-weight: 600
   text-transform: uppercase
+  padding-top: 5%
   text-align: center
   border: 1px solid $base-color
-  padding: .75em
-  margin-bottom: 0
   border-bottom: 0
   flex: 1
 
@@ -88,9 +83,12 @@
   width: 100%
   display: block
 
+img
+  max-width: 100%
+
 
 // Media queries
-@media screen and (min-width: 50em)
+@media screen and (min-width: 48em)
   .wrapper, .page-content
     flex-flow: row wrap
     justify-content: space-between
@@ -100,10 +98,6 @@
 
   // Header
   .site-header
-    max-width: 1000px
-    padding: 1.5em
-    margin: 0 auto
-    display: flex
     flex-flow: row wrap
 
   #toggle
