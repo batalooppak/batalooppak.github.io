@@ -7,16 +7,16 @@ permalink: /blog/
 
 {% for post in site.posts %}
 <section class="post">
-	<h1>
-		<a href="{{ post.url | prepend: site.baseurl }}">
-			<time class="post-date" datetime="{{ post.date | date_to_xmlschema }}" pubdate="pubdate">
-				{{ post.date | date: "%m.%d.%Y" }}
-			</time>
-			{{ post.title }}
-		</a>
-	</h1>
-	<p>{{ post.content | strip_html | truncatewords:75}}</p>
-	<p><a href="{{ post.url }}">Read more...</a></p>
+  <h1 class="post__title">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+      {{ post.title }}
+    </a>
+  </h1>
+  <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}" pubdate="pubdate">
+    {{ post.date | date: "%m.%d.%Y" }}
+  </time>
+  <p>{{ post.content | strip_html | truncatewords:75}}</p>
+  <p><a href="{{ post.url }}">Read more...</a></p>
 </section>
 {% endfor %}
 

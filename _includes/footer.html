@@ -1,86 +1,119 @@
-<footer id="site-footer" class="site-footer">
-	<div class="footer-links">
-		<div class="wrapper">
-			<section class="footer-links__section footer-categories">
-				<h3>Categories</h3>
-				<ul class="footer-links__menu">
-					{% for category in site.categories %}
-					<li class="footer-links__list">
-						<a class="footer-links__links" href="/categories/{{category | first}}/">{{category | first }}</a>
-					</li>
-					{% endfor %} 
-				</ul>
-			</section>
+<footer id="site-footer">
 
-			<section class="footer-links__section footer-tools">
-				<h3>Tools</h3>
-				<ul class="footer-links__menu">
-					<li class="footer-links__list"><a class="footer-links__links" target="_blank" href="https://github.com/neovim/neovim">NeoVim</a></li>
-					<li class="footer-links__list"><a class="footer-links__links" target="_blank" href="http://vim.org">Vim</a></li>
-					<li class="footer-links__list"><a class="footer-links__links" target="_blank" href="https://jekyllrb.com">Jekyll</a></li>
-					<li class="footer-links__list"><a class="footer-links__links" target="_blank" href="https://github.com">GitHub</a></li>
-					<li class="footer-links__list"><a class="footer-links__links" target="_blank" href="https://www.iterm2.com">iTerm2</a></li>
-				</ul>
-			</section>
+  <div class="footer-links">
+    <div class="wrapper">
+      <div class="u-flex--between">
+        <section class="footer-links__section footer-categories">
+          <h3 class="footer-links__title">Categories</h3>
+          <ul class="footer-links__list">
+            {% for category in site.categories %}
+            <li class="footer-links__item">
+              <a class="footer-links__link" href="/categories/{{category | first}}/">{{category | first }}</a>
+            </li>
+            {% endfor %}
+          </ul>
+        </section>
 
-			<section class="footer-links__section footer-favorites">
-				<h3>Favorites</h3>
-				<ul class="footer-links__menu">
-					<li class="footer-links__list"><a class="footer-links__links" target="_blank" href="http://vimawesome.com">Vim awesome</a></li>
-					<li class="footer-links__list"><a class="footer-links__links" target="_blank" href="https://www.python.org">Python</a></li>
-					<li class="footer-links__list"><a class="footer-links__links" target="_blank" href="http://http://www.w3schools.com">w3school</a></li>
-					<li class="footer-links__list"><a class="footer-links__links" target="_blank" href="http://www.pythonbytesize.com">Python byte size</a></li>
-					<li class="footer-links__list"><a class="footer-links__links" target="_blank" href="http://interactivepython.org">Interactive python</a></li>
-					<li class="footer-links__list"><a class="footer-links__links" target="_blank" href="http://www.blur.com">Blur</a></li>
-					<li class="footer-links__list"><a class="footer-links__links" target="_blank" href="https://css-tricks.com">css-tricks</a></li>
-					<li class="footer-links__list"><a class="footer-links__links" target="_blank" href="http://codepen.io">Codepen</a></li>
-				</ul>
-			</section>
+        <section class="footer-links__section footer-tools">
+          <h3 class="footer-links__title">Tools</h3>
+          <ul class="footer-links__list">
+            <li class="footer-links__item">
+              <a class="footer-links__link" target="_blank" href="https://github.com/neovim/neovim">NeoVim</a>
+            </li>
+            <li class="footer-links__item">
+              <a class="footer-links__link" target="_blank" href="http://vim.org">Vim</a>
+            </li>
+            <li class="footer-links__item">
+              <a class="footer-links__link" target="_blank" href="https://jekyllrb.com">Jekyll</a>
+            </li>
+            <li class="footer-links__item">
+              <a class="footer-links__link" target="_blank" href="https://github.com">GitHub</a>
+            </li>
+            <li class="footer-links__item">
+              <a class="footer-links__link" target="_blank" href="https://www.iterm2.com">iTerm2</a>
+            </li>
+          </ul>
+        </section>
 
-			<section class="footer-links__section footer-compliance">
-				<h3>Compliance</h3>
-				<p>This site tries to be in compliance with the latest web standards,
-					semantically and syntactically speaking, such as HTML5 and CSS3.</p>
-				<p>
-					<img
-					src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png"
-					height="48"
-					alt="HTML5 Powered with CSS3 / Styling, and Semantics"
-					title="HTML5 Powered with CSS3 / Styling, and Semantics">
-				</p>
-			</section>
-		</div>
-	</div>
+        <section class="footer-links__section footer-favorites">
+          <h3 class="footer-links__title">Favorites</h3>
+          <ul class="footer-links__list">
+            <li class="footer-links__item">
+              <a class="footer-links__link" target="_blank" href="http://vimawesome.com">Vim awesome</a>
+            </li>
+            <li class="footer-links__item">
+              <a class="footer-links__link" target="_blank" href="https://www.python.org">Python</a>
+            </li>
+            <li class="footer-links__item">
+              <a class="footer-links__link" target="_blank" href="http://http://www.w3schools.com">w3school</a>
+            </li>
+            <li class="footer-links__item">
+              <a class="footer-links__link" target="_blank" href="http://www.pythonbytesize.com">Python byte size</a>
+            </li>
+            <li class="footer-links__item">
+              <a class="footer-links__link" target="_blank" href="http://interactivepython.org">Interactive python</a>
+            </li>
+            <li class="footer-links__item">
+              <a class="footer-links__link" target="_blank" href="http://www.blur.com">Blur</a>
+            </li>
+            <li class="footer-links__item">
+              <a class="footer-links__link" target="_blank" href="https://css-tricks.com">css-tricks</a>
+            </li>
+            <li class="footer-links__item">
+              <a class="footer-links__link" target="_blank" href="http://codepen.io">Codepen</a>
+            </li>
+          </ul>
+        </section>
 
-	<div class="footer-info" role="contentinfo">
-		<div class="wrapper">
-			<ul class="footer-menu">
-				<li class="footer-menu__list footer-logo">
-					<a class="footer-menu__links footer-logo" href="/">
-						<img src="/images/logo_small.svg" alt="site logo" height="16px">
-					</a>
-				</li>
-				{% for page in site.pages %}
-				{% if page.title %}
-				<li class="footer-menu__list">
-					<a class="footer-menu__links" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-				</li>
-				{% endif %}
-				{% endfor %}
-				<li class="footer-menu__list">
-					<a class="footer-menu__links" href="#">Sitemap</a>
-				</li>
-			</ul>
-			<p class="subscription">Subscribe: 
-				<img src=/images/feed-icon-14x14.png alt="rss feed icon">
-			</p>
-			<p class="cc-license">
-				<img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" />
-			</p>
-			<p class="copy">&copy; 2016 - {{ site.time | date: '%Y' }} 
-				<a class="copy-link" href="https://batalooppak.github.io">Bata loop pak</a>. All rights reserved.
-			</p>
-		</div>
-	</div>
+        <section class="footer-links__section footer-compliance">
+          <h3 class="footer-links__title">Compliance</h3>
+          <p>This site tries to be in compliance with the latest web standards,
+            semantically and syntactically speaking, such as HTML5 and CSS3.
+          </p>
+          <p>
+            <img
+            src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png"
+            height="48"
+            alt="HTML5 Powered with CSS3 / Styling, and Semantics"
+            title="HTML5 Powered with CSS3 / Styling, and Semantics">
+          </p>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper">
+    <div class="footer-menu u-flex--between" role="contentinfo">
+      <ul class="footer-menu__list">
+        <li class="footer-menu__item footer-logo">
+          <a class="footer-menu__link footer-logo" href="/" title="Return to homepage">
+            <img src="/images/logo_small.svg" alt="footer bata loop pak logo" height="24em">
+          </a>
+        </li>
+        {% for page in site.pages %}
+        {% if page.title %}
+        <li class="footer-menu__item">
+          <a class="footer-menu__link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+        </li>
+        {% endif %}
+        {% endfor %}
+        <li class="footer-menu__item">
+          <a class="footer-menu__link" href="#">Sitemap</a>
+        </li>
+      </ul>
+      <p class="subscription">Subscribe:
+        <img src=/images/feed-icon-14x14.png alt="rss feed icon">
+      </p>
+    </div>
+
+
+    <div class="footer-info u-flex--between">
+      <p class="cc-license">
+        <img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png">
+      </p>
+      <p class="copy">&copy; 2016 - {{ site.time | date: '%Y' }}
+        <a class="copy__link" href="https://batalooppak.github.io">Bata loop pak</a>. All rights reserved.
+      </p>
+    </div>
+  </div>
 
 </footer>

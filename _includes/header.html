@@ -1,19 +1,24 @@
 <header class="site-header" role="banner">
 
-	<div class="site-logo">
-		<h1 class="site-title"><a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
-		<p class="site-subtitle">{{ site.subtitle }}</p>
-	</div>
+  <div class="wrapper u-flex--between u-flex--align-center">
+    <div class="site-presentation">
+      <h1 class="site-title">{{site.title}}</h1>
+      <p class="site-subtitle">{{ site.subtitle }}</p>
+    </div>
 
-	<a id="toggle" onclick="toggle('site-nav')">&equiv;</a>
-	<nav id="site-nav" class="not-visible" role="navigation">
-		<a href="#" class="menu-icon"></a>
-		{% for page in site.pages %}
-		{% if page.title %}
-		<a class="site-nav__links" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}
-		</a>
-		{% endif %}
-		{% endfor %}
-	</nav>
+    <a href="/" class="site-nav__home" title="Return to homepage">
+      <img src="/images/logo.svg" alt="bata loop pak logo" height="150em">
+    </a>
+
+    <a id="toggle" onclick="toggle('site-nav')"></a>
+    <nav class="site-nav" role="navigation">
+      {% for page in site.pages %}
+      {% if page.title %}
+      <a class="site-nav__link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}
+      </a>
+      {% endif %}
+      {% endfor %}
+    </nav>
+  </div>
 
 </header>

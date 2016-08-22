@@ -1,27 +1,26 @@
 ---
 layout: default
 ---
-<div class="pure-g">
-	<div class="pure-u-1">
-		{% if page.banner  %}
-		<img class="img_banner" src="{{ page.banner }}" />
-		{% endif %}
-		<article class="post">
-			<header class="post-header">
-				<h1>
-					<span>
-						<time class="post-date" datetime="{{ page.date | date_to_xmlschema }}" pubdate="pubdate">
-							{{ page.date | date: "%m.%d.%Y" }}
-						</time>
-						{{ page.title }}
-					</span>
-				</h1>
-			</header>
+{% if page.banner  %}
+<img class="img_banner" src="{{ page.banner }}" />
+{% endif %}
+<article class="post">
+  <header class="post__header">
+    <h1 class="post__title">
+      {{ page.title }}
+    </h1>
+    <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}" pubdate="pubdate">
+      {{ page.date | date: "%m.%d.%Y" }}
+    </time>
+  </header>
 
-			{{ content }}
-			<footer class="post-footer">
-				{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
-			</footer>
-		</article>
-	</div>
-</div>
+  {{ content }}
+  <footer class="post-footer">
+    {% if page.author %}
+    <span class="post-author">{{ page.author }}</span>
+    {% endif %}
+    {% if page.meta %}
+    <span class="post-meta">{{ page.meta }}</span>
+    {% endif %}
+  </footer>
+</article>
