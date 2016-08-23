@@ -1,6 +1,11 @@
 .main-aside {
   background-color: lightgray;
+  /* Flex shit */
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 300px;
+  flex: 1 0 300px;
 }
+
 .about {
   background-color: white;
 }

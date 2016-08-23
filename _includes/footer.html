@@ -1,14 +1,15 @@
 <footer class="flex flex--column flex--wrap site-footer">
 
-  <div class="flex spacing footer-links">
-    <section class="flex spacing footer-links__section footer-categories">
+  <div class="flex flex--wrap spacing footer-links">
+
+    <section class="flex flex--column spacing footer-links__section footer-categories">
       <h1 class="spacing footer-links__title">Categories</h1>
       {% for category in site.categories %}
       <a class="spacing footer-links__link" href="/categories/{{category | first}}/">{{category | first }}</a>
       {% endfor %}
     </section>
 
-    <section class="flex spacing footer-links__section footer-tools">
+    <section class="flex flex--column spacing footer-links__section footer-tools">
       <h1 class="spacing footer-links__title">Tools</h1>
       <a class="spacing footer-links__link" target="_blank" href="https://github.com/neovim/neovim">NeoVim</a>
       <a class="spacing footer-links__link" target="_blank" href="http://vim.org">Vim</a>
@@ -17,7 +18,7 @@
       <a class="spacing footer-links__link" target="_blank" href="https://www.iterm2.com">iTerm2</a>
     </section>
 
-    <section class="flex spacing footer-links__section footer-favorites">
+    <section class="flex flex--column spacing footer-links__section footer-favorites">
       <h1 class="spacing footer-links__title">Favorites</h1>
       <a class="spacing footer-links__link" target="_blank" href="http://vimawesome.com">Vim awesome</a>
       <a class="spacing footer-links__link" target="_blank" href="https://www.python.org">Python</a>
@@ -29,7 +30,7 @@
       <a class="spacing footer-links__link" target="_blank" href="http://codepen.io">Codepen</a>
     </section>
 
-    <section class="flex spacing footer-links__section footer-compliance">
+    <section class="flex flex--column spacing footer-links__section footer-compliance">
       <h1 class="spacing footer-links__title">Compliance</h1>
       <div class="spacing">This site tries to be in compliance with the latest web standards,
         semantically and syntactically speaking, such as HTML5 and CSS3.
@@ -42,8 +43,10 @@
         title="HTML5 Powered with CSS3 / Styling, and Semantics">
       </div>
     </section>
+
   </div>
-  <div class="flex footer-info">
+
+  <div class="flex flex--space-between flex--align-center flex--wrap footer-info">
 
     <a class="spacing logo" href="/" title="Return to homepage">
       <img src="/images/logo_small.svg" alt="footer bata loop pak logo" height="50em">
@@ -67,7 +70,7 @@
     <div class="spacing cc-license">
       <img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png">
     </div>
-    <div class="flex spacing footer-copy">&copy; 2016 - {{ site.time | date: '%Y' }}&nbsp;
+    <div class="flex spacing flex-item--full footer-copy">&copy; 2016 - {{ site.time | date: '%Y' }}&nbsp;
       <a class="footer-copy__link" href="https://batalooppak.github.io">Bata loop pak</a>&nbsp;// All rights reserved.
     </div>
   </div>
