@@ -1,0 +1,91 @@
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex--space-between {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.flex--align-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -ms-grid-row-align: center;
+  align-items: center;
+}
+
+.flex--align-start {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  -ms-grid-row-align: flex-start;
+  align-items: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+}
+
+.spacing {
+  padding: .75em;
+  margin: .75em;
+}
+
+.flex-item--single {
+  flex: 1 1 0;
+  min-width: 300px
+}
+
+.flex-item--double {
+  flex: 2.5 1 0
+}
+
+.flex-item--main { /* Main container */
+  -webkit-box-flex: 2.5;
+  -ms-flex: 2.5 0 0;
+  flex: 2.5 0 0
+}
+
+.flex-item--test { /* Articles inside main content */
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 0;
+  flex: 1 0 0;
+  min-width: 250px;
+}
+
+.flex-item--aside { /* Aside container */
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  min-width: 300px;
+}
+
+.flex-item--full { /* Ocuppies the whole width */
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
+}
+
+.flex--column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.flex--wrap {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.flex--nowrap {
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}

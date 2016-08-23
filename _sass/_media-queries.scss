@@ -1,0 +1,20 @@
+@media screen and (max-width: 50em) {
+  .site-header,
+  .footer-info,
+  .footer-nav,
+  .site-nav,
+  .footer-copy {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .footer-nav, .main-nav {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .footer-info {
+    flex-flow: column wrap;
+  }
+}
