@@ -1,24 +1,21 @@
-<header class="site-header" role="banner">
-
-  <div class="wrapper u-flex--between u-flex--align-center">
-    <div class="site-presentation">
+<header class="flex site-header" role="banner">
+    <div class="spacing site-presentation">
       <h1 class="site-title">{{site.title}}</h1>
       <p class="site-subtitle">{{ site.subtitle }}</p>
     </div>
 
-    <a href="/" class="site-nav__home" title="Return to homepage">
-      <img src="/images/logo.svg" alt="bata loop pak logo" height="150em">
+    <a href="/" class="spacing logo" title="Return to homepage">
+      <img src="/images/logo.svg" alt="logo bata loop pak" height="150em">
     </a>
 
-    <a id="toggle" onclick="toggle('site-nav')"></a>
-    <nav class="site-nav" role="navigation">
+    <nav class="flex spacing site-nav" role="navigation">
+      <a id="toggle" onclick="toggle('site-nav')"></a>
       {% for page in site.pages %}
       {% if page.title %}
-      <a class="site-nav__link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}
+      <a class="spacing site-nav__link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}
       </a>
       {% endif %}
       {% endfor %}
     </nav>
-  </div>
 
 </header>
