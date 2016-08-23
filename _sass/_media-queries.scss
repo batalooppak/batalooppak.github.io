@@ -15,6 +15,7 @@
   }
 
   .footer-info {
+    -ms-flex-flow: column wrap;
     flex-flow: column wrap;
   }
 }
