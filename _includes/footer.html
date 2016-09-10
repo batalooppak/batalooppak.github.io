@@ -1,78 +1,41 @@
-<footer class="flex flex--column flex--wrap site-footer">
+<footer class="site-footer">
 
-  <div class="flex flex--wrap spacing footer-links">
+  <div class="footer-nav">
+    <h2 class="offscreen">Footer Navigation</h2>
 
-    <section class="flex flex--column spacing footer-links__section footer-categories">
-      <h1 class="spacing footer-links__title">Categories</h1>
+    <div class="footer-section">
+      <h3 class="footer-section__title">Categories</h3>
       {% for category in site.categories %}
-      <a class="spacing footer-links__link" href="/categories/{{category | first}}/">{{category | first }}</a>
+      <a class="footer-section__link" href="/categories/{{category | first}}/">{{category | first }}</a>
       {% endfor %}
-    </section>
+    </div>
 
-    <section class="flex flex--column spacing footer-links__section footer-tools">
-      <h1 class="spacing footer-links__title">Tools</h1>
-      <a class="spacing footer-links__link" target="_blank" href="https://github.com/neovim/neovim">NeoVim</a>
-      <a class="spacing footer-links__link" target="_blank" href="http://vim.org">Vim</a>
-      <a class="spacing footer-links__link" target="_blank" href="https://jekyllrb.com">Jekyll</a>
-      <a class="spacing footer-links__link" target="_blank" href="https://github.com">GitHub</a>
-      <a class="spacing footer-links__link" target="_blank" href="https://www.iterm2.com">iTerm2</a>
-    </section>
+    <div class="footer-section">
+      <h3 class="footer-section__title">Site</h3>
+      <a class="footer-section__link" href="#">Accessibility</a>
+      <a class="footer-section__link" href="#">Sitemap</a>
+      <a class="footer-section__link" href="#">Subscribe</a>
+    </div>
 
-    <section class="flex flex--column spacing footer-links__section footer-favorites">
-      <h1 class="spacing footer-links__title">Favorites</h1>
-      <a class="spacing footer-links__link" target="_blank" href="http://vimawesome.com">Vim awesome</a>
-      <a class="spacing footer-links__link" target="_blank" href="https://www.python.org">Python</a>
-      <a class="spacing footer-links__link" target="_blank" href="http://http://www.w3schools.com">w3school</a>
-      <a class="spacing footer-links__link" target="_blank" href="http://www.pythonbytesize.com">Python byte size</a>
-      <a class="spacing footer-links__link" target="_blank" href="http://interactivepython.org">Interactive python</a>
-      <a class="spacing footer-links__link" target="_blank" href="http://www.blur.com">Blur</a>
-      <a class="spacing footer-links__link" target="_blank" href="https://css-tricks.com">css-tricks</a>
-      <a class="spacing footer-links__link" target="_blank" href="http://codepen.io">Codepen</a>
-    </section>
-
-    <section class="flex flex--column spacing footer-links__section footer-compliance">
-      <h1 class="spacing footer-links__title">Compliance</h1>
-      <div class="spacing">This site tries to be in compliance with the latest web standards,
-        semantically and syntactically speaking, such as HTML5 and CSS3.
-      </div>
-      <div class="spacing">
-        <img
-        src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png"
-        height="48"
-        alt="HTML5 Powered with CSS3 / Styling, and Semantics"
-        title="HTML5 Powered with CSS3 / Styling, and Semantics">
-      </div>
-    </section>
+    <div class="footer-section">
+      <h2 class="footer-section__title">Compliance</h2>
+      <p class="">This site tries to be in compliance with the latest web standards, semantically and syntactically speaking, such as HTML5 and CSS3.
+      </p>
+      <img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" height="48" alt="HTML5 Powered with CSS3 / Styling, and Semantics">
+    </div>
 
   </div>
 
-  <div class="flex flex--space-between flex--align-center flex--wrap footer-info">
+  <div class="footer-info">
 
-    <a class="spacing logo" href="/" title="Return to homepage">
-      <img src="/images/logo_small.svg" alt="footer bata loop pak logo" height="50em">
+    <a class="logo" href="/" title="Return to the homepage">
+      <img src="/images/logo_small.svg" alt="blp logo" height="50em">
     </a>
 
-    <nav class="flex spacing footer-nav">
+    <img  class="cc-license" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" alt="Creative Commons License">
 
-      {% for page in site.pages %}
-      {% if page.title %}
-      <a class="footer-nav__link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-      {% endif %}
-      {% endfor %}
-      <a class="footer-nav__link" href="#">Accessibility</a>
-      <a class="footer-nav__link" href="#">Sitemap</a>
-    </nav>
-    <div class="spacing rss-subscribe">
-      Subscribe:&nbsp;
-      <img src=/images/feed-icon-14x14.png alt="rss feed icon" height="14px">
-    </div>
+    <p class="copyright">&copy; 2015 - {{ site.time | date: '%Y' }} <a class="copyright__link" href="https://batalooppak.github.io">Bata loop pak</a>&nbsp;// All rights reserved.</p>
 
-    <div class="spacing cc-license">
-      <img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png">
-    </div>
-    <div class="flex spacing flex-item--full-width site-copyright">&copy; 2016 - {{ site.time | date: '%Y' }}&nbsp;
-      <a class="site-copyright__link" href="https://batalooppak.github.io">Bata loop pak</a>&nbsp;// All rights reserved.
-    </div>
   </div>
 
 </footer>

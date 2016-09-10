@@ -7,15 +7,11 @@
 
   {% include header.html %}
 
-  <div class="flex flex--wrap">
+  <main class="site-content" role="main">
+    {{ content }}
+  </main>
 
-    <main class="flex flex--wrap spacing page-content" role="main">
-      {{ content }}
-    </main>
-
-    {% include secondary-section.html %}
-
-  </div>
+  {% include sidebar.html %}
 
   {% include footer.html %}
 
