@@ -6,7 +6,8 @@
 html
   font: 100%/1.5em "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
   color: $base-color
-  background: #f7f7f7
+  background: $grey
+  max-width: 1280px
 
 // h1 to p based on http://joshnh.com/weblog/how-to-set-up-a-baseline-grid/
 h1
@@ -67,14 +68,14 @@ ol ol
   margin-left: 3em
 
 blockquote
-  background: #cfcfcf
+  background: $grey
   font-style: italic
   padding: 1.5em 4.5em
   margin-bottom: 1.5em
   position: relative
   text-align: justify
-  border-left: 1em solid #8080ff
-  border-right: .125em solid #8080ff
+  border-left: 1em solid $link
+  border-right: .125em solid $link
 
 
   &::before
@@ -89,21 +90,20 @@ blockquote
 
 blockquote
   a
-    color: #8080ff
+    color: $link
 
     &:hover
       color: #666
 
 table
-  font-family: monospace
-  font-size: 1.2307692308em
-  text-align: left
   max-width: 100%
   margin-bottom: 1.5em
+  border-collapse: collapse
 
 
 thead
-  background: #8080ff
+  color: $back-color
+  background: $link
 
 
 th,
@@ -112,7 +112,7 @@ td
 
 tr
   &:nth-of-type(2n)
-    background: #cfcfcf
+    background: $grey
 
 pre
   font-size: 1.2307692308em
@@ -131,4 +131,16 @@ dl
     margin-left: 1.5em
 
 hr
-  margin: 2.9375em 3em
+  margin: 3em
+  border: none
+
+sup, sub
+  vertical-align: baseline
+  position: relative
+  top: -0.4em
+
+sub
+  top: 0.4em
+
+img
+  display: block

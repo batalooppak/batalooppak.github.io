@@ -1,33 +1,38 @@
 .site-content, .sidebar {
-  margin: 1em;
+  margin: 1.5em;
   display: inline-block;
   vertical-align: top
 }
 
 .site-content {
   background: $back-color;
-  width: calc(70% - 2em);
-  padding: 1em;
+  width: calc(70% - 3em);
+  padding: 1.5em;
 }
 
 .sidebar {
-  width: calc(30% - 2em - 5px)
+  padding: 1.5em 0;
+  width: calc(30% - 3em - 5px)
 }
 
 .sidebar__section {
   margin: 1.5em 0;
+
+  &:nth-child(2) {
+    margin-top: 0
+  };
 }
 .sidebar__title {
   font-size: 1.5em;
   color: $back-color;
   background: $base-color;
-  padding: .75em 1em;
+  padding: .5em 1em;
   display: inline-block;
 }
 
 .sidebar__content {
   background: $back-color;
-  padding: 1em;
+  padding: 1.4375em;
   border: 1px solid grey;
 }
 
@@ -35,7 +40,7 @@
   display: table;
   text-decoration: none;
   padding-left: 1em;
-  margin: .25em 0;
+  // margin: .25em 0;
   // position: relative;
   box-shadow: 5px 0 #fc0 inset;
   transition: all .3s;

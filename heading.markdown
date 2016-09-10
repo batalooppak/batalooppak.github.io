@@ -3,6 +3,7 @@ layout: page
 title: Test
 alttitle: Markdown test
 permalink: /test/
+weight: 5
 ---
 
 __bold text__ or **Bold**
@@ -189,7 +190,7 @@ Here's a "line block":
 
 and images can be specified like so:
 
-<img src="/images/thumbs/Atom_editor_logo.png" height="498" />
+<img src="/images/thumbs/Atom_editor_logo.png" height="504" />
 
 Inline math equations go in like so: $\omega = d\phi / dt$. Display
 math should get its own line and be put in in double-dollarsigns:

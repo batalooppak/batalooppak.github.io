@@ -1,15 +1,13 @@
 .footer-nav {
-  background: #333;
-  padding: 1em;
+  background: $back-color;
+  padding: 1.5em;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .footer-section {
-  background: white;
   max-width: calc((100% - 4em ) / 3);
-  padding: 1em 2em;
+  padding: 0 1.5em;
 }
 
 .footer-section__title {
