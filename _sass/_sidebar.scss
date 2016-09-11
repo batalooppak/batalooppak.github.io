@@ -1,17 +1,18 @@
 .site-content, .sidebar {
   margin: $gutter;
   display: inline-block;
-  vertical-align: top
+  vertical-align: top;
+
+  @media screen and (max-width: 767px) {
+    margin: 0 !important;
+    width: 100% !important;
+  }
 }
 
 .site-content {
   background: $back-color;
   width: calc(70% - (#{$gutter} * 2));
   padding: $gutter;
-
-  @media screen and (max-width: 767px) {
-    width:  calc(100% - (#{$gutter} * 2))
-  }
 }
 
 .sidebar {
@@ -19,7 +20,7 @@
   width: calc(30% - (#{$gutter} * 2) - 5px);
 
   @media screen and (max-width: 767px) {
-    width:  calc(100% - (#{$gutter} * 2));
+    // width:  calc(100% - (#{$gutter} * 2));
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
