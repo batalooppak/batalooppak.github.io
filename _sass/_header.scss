@@ -1,16 +1,62 @@
-.site-header {
+#site-header {
   padding: 1.5em;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+
+  @media screen and (max-width: 767px) {
+    background: $bg-muted;
+    position: fixed;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: all .3s;
+  }
+}
+
+#site-nav {
+  @media screen and (max-width: 767px) {
+    margin-top: 2em;
+    width: 100%;
+  }
+}
+
+#toggle {
+  @media screen and (max-width: 767px) {
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border: 1px solid #000;
+    position: fixed;
+    top: 1em;
+    right: 1em;
+    cursor: pointer;
+  }
 }
 
 .site-nav__link {
-  background: darken($back-color, 10);
+  background: $back-color;
+  font-weight: bold;
   text-decoration: none;
-  padding: 1.5em;
+  padding: .75em 1.5em;
   position: relative;
+  transition: all .5s;
+
+  @media screen and (max-width: 767px) {
+    color: $fg-muted;
+    background: transparent;
+    display: block;
+    box-shadow: .1em 0 $base-color inset;
+
+    &:hover {
+      color: #777;
+      padding-left: 2em;
+      box-shadow: 250px 0 $base-color inset;
+    }
+  }
 
   &::before {
     content: "";
@@ -20,11 +66,16 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    transition: width .3s;
+    transition: all .3s;
+
+    @media screen and (max-width: 767px) {
+      background: $fg-muted-high;
+      height: .1em;
+    }
   }
 
-  &:hover::before {
-    width: 100%
+  &:hover::before, &:focus::before {
+    width: 100%;
   }
 }
 
@@ -40,12 +91,20 @@
 }
 
 .featured__content {
-  column-count: 2
+  column-count: 2;
+
+  @media screen and (max-width: 1023px) {
+    column-count: 1
+  }
 }
 
 .active {
   color: #181843;
   position: relative;
+
+  @media screen and (max-width: 767px) {
+    color: $fg-muted;
+  }
 
   &::before {
     content: "";
@@ -55,5 +114,9 @@
     position: absolute;
     bottom: 0;
     left: 0;
+
+    @media screen and (max-width: 767px) {
+      height: .1em;
+    }
   }
 }

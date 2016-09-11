@@ -17,6 +17,25 @@
 
 </body>
 
+<script type="text/javascript">
+var menu = document.getElementById('site-header');
+var body = document.body;
+var status = 'hidden';
+
+function toggle_menu() {
+  if(status == 'hidden') {
+    menu.style.right = '0';
+    body.style.transition = 'all .3s';
+    body.style.right = '300px';
+    status = 'visible';
+  }
+  else {
+    menu.style.right = '-300px';
+    body.style.right = '0'
+    status = 'hidden';
+  }
+}
+</script>
 
 <script type="text/javascript">
 window.onload = function(){

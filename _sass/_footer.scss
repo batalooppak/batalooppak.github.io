@@ -3,11 +3,18 @@
   padding: 1.5em;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .footer-section {
-  max-width: calc((100% - 4em ) / 3);
+  // max-width: calc((100% - 2em ) / 3);
   padding: 0 1.5em;
+  flex:1;
+
+  @media screen and (max-width: 600px) {
+    flex: 0 0 100%;
+    margin-bottom: 3em
+  }
 }
 
 .footer-section__title {
