@@ -1,38 +1,37 @@
 #site-header {
-  padding: 1.5em;
+  padding: $gutter;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 
   @media screen and (max-width: 767px) {
-    background: $bg-muted;
-    position: fixed;
-    right: -300px;
-    width: 300px;
-    height: 100%;
     flex-direction: column;
-    justify-content: flex-start;
-    transition: all .3s;
   }
 }
 
 #site-nav {
   @media screen and (max-width: 767px) {
-    margin-top: 2em;
-    width: 100%;
+    background: $bg-muted;
+    padding-top: 5em;
+    position: fixed;
+    top:0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    transition: all .3s;
   }
 }
 
 #toggle {
   @media screen and (max-width: 767px) {
-    width: 20px;
-    height: 20px;
+    width: 2em;
+    height: 2em;
     background: #fff;
     border: 1px solid #000;
     position: fixed;
-    top: 1em;
-    right: 1em;
+    top: 2em;
+    right: 2em;
     cursor: pointer;
   }
 }
@@ -54,7 +53,7 @@
     &:hover {
       color: #777;
       padding-left: 2em;
-      box-shadow: 250px 0 $base-color inset;
+      box-shadow: 300px 0 $base-color inset;
     }
   }
 

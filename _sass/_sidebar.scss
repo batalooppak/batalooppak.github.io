@@ -1,25 +1,25 @@
 .site-content, .sidebar {
-  margin: 1.5em;
+  margin: $gutter;
   display: inline-block;
   vertical-align: top
 }
 
 .site-content {
   background: $back-color;
-  width: calc(70% - 3em);
-  padding: 1.5em;
+  width: calc(70% - (#{$gutter} * 2));
+  padding: $gutter;
 
   @media screen and (max-width: 767px) {
-    width:  calc(100% - 3em)
+    width:  calc(100% - (#{$gutter} * 2))
   }
 }
 
 .sidebar {
-  padding: 1.5em 0;
-  width: calc(30% - 3em - 5px);
+  padding: $gutter 0;
+  width: calc(30% - (#{$gutter} * 2) - 5px);
 
   @media screen and (max-width: 767px) {
-    width:  calc(100% - 3em);
+    width:  calc(100% - (#{$gutter} * 2));
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -37,19 +37,19 @@
 }
 
 .sidebar__section {
-  margin: 1.5em 0;
+  margin: $gutter 0;
 
   @media screen and (max-width: 767px) {
-    width: calc(50% - 3em);
+    width: calc(50% - (#{$gutter} * 2));
 
     &:last-child {
       margin-right: auto;
-      margin-left: 1.5em;
+      margin-left: $gutter;
     }
   }
 
   @media screen and (max-width: 584px) {
-    width: calc(100% - 3em)
+    width: calc(100% - (#{$gutter} * 2))
   }
 
 }
@@ -63,7 +63,7 @@
 
 .sidebar__content {
   background: $back-color;
-  margin-bottom: 1.5em;
+  margin-bottom: $gutter;
   padding: 1.4375em;
   border: 1px solid grey;
   height: 80%;
@@ -72,21 +72,9 @@
 .sidebar__link {
   display: table;
   text-decoration: none;
-  padding-left: 1em;
-  // margin: .25em 0;
-  // position: relative;
+  padding-left: $gutter;
   box-shadow: 5px 0 #fc0 inset;
   transition: all .3s;
-
-  // &::before {
-  //   content: "";
-  //   display: block;
-  //   width: 0;
-  //   height: 1.5em;
-  //   background: rgba(#f07, 50);
-  //   position: absolute;
-  //   transition: all .3s;
-  // }
 
   &:hover, &:focus {
     box-shadow: 10em 0 #fc0 inset;

@@ -1,6 +1,6 @@
 .footer-nav {
   background: $back-color;
-  padding: 1.5em;
+  padding: $gutter;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -8,12 +8,12 @@
 
 .footer-section {
   // max-width: calc((100% - 2em ) / 3);
-  padding: 0 1.5em;
+  padding: 0 $gutter;
   flex:1;
 
   @media screen and (max-width: 600px) {
     flex: 0 0 100%;
-    margin-bottom: 3em
+    margin-bottom: $gutter * 2
   }
 }
 
