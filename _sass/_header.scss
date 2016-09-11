@@ -32,6 +32,7 @@
     position: fixed;
     top: 2em;
     right: 2em;
+    z-index: 20;
     cursor: pointer;
   }
 }
@@ -83,6 +84,10 @@
   font-size: 4.5em;
   line-height: 1em;
   margin-bottom: .6666666667em;
+
+  @media screen and (max-width: 739px) {
+    font-size: 3em;
+  }
 }
 
 .site-intro::before, .site-intro::after {
