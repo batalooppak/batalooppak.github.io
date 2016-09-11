@@ -33,10 +33,11 @@ __bold text__ or **Bold**
 
 ## Table example
 
-| This        | is a test   | to show   | or preview | a table  |
-|-------------|-------------|-----------|------------|----------|
-| so          | Basically   | I have to | write      | anything |
-| and nothing | is supossed | to asdf   | asdfsadf   | de lies  |
+| ID      | Name          | Year | Amount (USD)  | Total         |
+|---------|---------------|------|---------------|---------------|
+| Poor    | Bata Loop Pak | 1986 | 1.738,04      | 932.456,00    |
+| Richer  | Steve Jobs    | 19xx | 2,234,548.99  | 2,234,548.99  |
+| Richest | Bill Gates    | 19xx | 17,321,234.45 | 17,321,234.45 |
 
 ___
 

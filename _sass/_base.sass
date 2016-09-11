@@ -99,20 +99,27 @@ blockquote
       color: #666
 
 table
-  max-width: 100%
+  font-size: .75em
+  text-align: left
+  table-layout: fixed
   margin-bottom: $gutter
   border-collapse: collapse
-  overflow: scroll
+  width: 100%
+  white-space: nowrap
 
 
 thead
   color: $back-color
   background: $link
 
-
 th,
 td
   padding: 0 $gutter
+  text-overflow: ellipsis
+  overflow: hidden
+
+th
+  font-weight: 400
 
 tr
   &:nth-of-type(2n)
