@@ -4,14 +4,17 @@
 {% include head.html %}
 
 <body>
+  {% include icons.html %}
 
   {% include header.html %}
 
-  <main class="site-content" role="main">
-    {{ content }}
-  </main>
+  <div class="wrapper">
+    <main class="site-content" role="main">
+      {{ content }}
+    </main>
 
-  {% include sidebar.html %}
+    {% include sidebar.html %}
+  </div>
 
   {% include footer.html %}
 
@@ -24,14 +27,17 @@ var status = 'hidden';
 
 function toggle_menu() {
   if(status == 'hidden') {
-    menu.style.right = '0';
     body.style.transition = 'all .3s';
+    menu.style.transition = 'all .3s';
     body.style.right = '300px';
+    menu.style.right = '0';
     status = 'visible';
   }
   else {
     menu.style.right = '-300px';
-    body.style.right = '0'
+    body.style.right = '0';
+    // menu.removeAttribute('style');
+    // body.removeAttribute('style');
     status = 'hidden';
   }
 }
@@ -52,7 +58,7 @@ window.onload = function(){
     loadTime = (end - start) / 1000;
 
     var copy = document.getElementsByClassName('copyright');
-    copy[0].innerHTML += "<span class='loaded'>This page loaded in <strong>" + loadTime + " seconds</strong>.</span>";
+    copy[0].innerHTML += "<br><span class='loaded'>This page loaded in <strong>" + loadTime + " seconds</strong>.</span>";
   }, 0);
 }
 

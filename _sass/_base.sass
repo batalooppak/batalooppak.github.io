@@ -1,4 +1,8 @@
+$gutter: 1.5em
+
 *
+  &::before,
+  &::after
   padding: 0
   margin: 0
   box-sizing: border-box
@@ -7,7 +11,6 @@ html
   font: 100%/1.5em "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
   color: $base-color
   background: $grey
-  max-width: 1280px
 
 body
   overflow-x: hidden
@@ -16,9 +19,9 @@ body
 
 // h1 to p based on http://joshnh.com/weblog/how-to-set-up-a-baseline-grid/
 h1
-  font-size: 3em // 48 / 16 */
-  line-height: 1em // 48 / 48 */
-  margin-bottom: .5em // 24 / 48 */
+  font-size: 3em
+  line-height: 1em
+  margin-bottom: .5em
 
   @media screen and (max-width: 767px)
     font-size: 2.25em // 36 / 16 */

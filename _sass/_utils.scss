@@ -3,4 +3,43 @@
   left: -1000em;
 }
 
-$gutter: 1.5em;
+.u_accessibility {
+  font-size: 0;
+  height: 1px;
+  overflow: hidden;
+  display: block;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  fill: #fff;
+  display: block;
+  height: 2em;
+  width: 256px;
+
+  @media screen and (max-width: 30em) {
+    height: 1.5em;
+    width: 193px;
+  }
+}
+
+.logo--sm {
+  width: 193px;
+}
+
+.badge__link {
+  color: $back-color;
+  background: $purple3;
+  text-decoration: none;
+  padding: 0 .3em;
+
+  &:hover {
+    color: $purple3;
+    background: $back-color;
+    border-bottom: 1px solid;
+  }
+}
